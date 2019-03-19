@@ -1,0 +1,11 @@
+@function remVal($args) {
+  @return $args / 16px * 1rem;
+}
+
+$font-title: 'Segoe UI', sans-serif;
+$font-normal: 'OpenSans_regular', sans-serif;
+$font-light: 'OpenSans_light', sans-serif;
+$font-lightItalic: 'OpenSans_lightItalic', sans-serif;
+$font-semibold: 'OpenSans_semibold', sans-serif;
+$font-bold: 'OpenSans_bold', sans-serif;
+$font-boldItalic: 'OpenSans_boldItalic', sans-serif;

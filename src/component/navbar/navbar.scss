@@ -1,0 +1,27 @@
+@import '../../static/style/scss/_variables';
+
+nav {
+  flex-direction: row;
+  font-family: $font-normal;
+}
+
+.navbar-title {
+  font-family: $font-title;
+  font-size: remVal(40px);
+  flex-direction: row;
+}
+
+.navbar-routes {
+  font-size: remVal(26px);
+  align-items: flex-end;
+
+  .nav-item {
+    padding-bottom: 0;
+
+    .nav-link {
+      color: #000000;
+      padding-bottom: 0;
+      padding: 0 0 0 remVal(80px)  ;
+    }
+  }
+}

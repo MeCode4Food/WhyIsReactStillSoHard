@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
 import NavbarRoute from './helpers/navbar-route'
+import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import './navbar.scss'
 
 class Navbar extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      title: 'CK',
+      title: 'Title',
       routes: [
         {
           name: 'Home',
           route: '/home'
+        },
+        {
+          name: 'Projects',
+          route: '/projects'
         },
         {
           name: 'About',
@@ -24,20 +31,28 @@ class Navbar extends Component {
     }
   }
   render () {
+    const { location } = this.props
     return (
-      <div className='navbar-container'>
+      <nav className='d-flex justify-content-between'>
         <div className='navbar-title'>{this.state.title}</div>
-        {
-          _.map(this.state.routes, (route) => {
-            return <NavbarRoute
-              name={_.get(route, 'name')}
-              route={_.get(route, 'route')}
-            />
-          })
-        }
-      </div>
+        <div className='d-flex navbar-routes'>
+          {
+            _.map(this.state.routes, (route) => {
+              return <NavbarRoute
+                name={_.get(route, 'name')}
+                route={_.get(route, 'route')}
+                location={location}
+              />
+            })
+          }
+        </div>
+      </nav>
     )
   }
 }
 
-export default Navbar
+Navbar.propTypes = {
+  location: PropTypes.object
+}
+
+export default withRouter(Navbar)

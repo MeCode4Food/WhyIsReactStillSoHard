@@ -1,0 +1,40 @@
+@import '../../static/style/scss/_variables';
+
+.home-container{
+  margin-top: remVal(104px);
+
+  img {
+    // background-image: url('../../images/cat.jpg');
+    width: remVal(410px);
+    height: remVal(410px);
+    object-fit: cover;
+    object-position: 5% 0%;
+  }
+  .content-container{
+    
+    flex-grow: 1;
+    .content-main{
+      font-family: $font-light;
+      padding: remVal(56px) 0 0 remVal(94px);
+
+      .main-text{
+        font-size: remVal(48px);
+        padding-bottom: remVal(80px);
+      }
+
+      .side-text{
+        .side-text-1{
+          font-size: remVal(24px);
+          padding-bottom: remVal(32px);
+        }
+        .side-text-2{
+          font-size: remVal(24px);
+        }
+      }
+    }
+    .content-footer{
+      font-family: $font-lightItalic;
+      text-align: right;
+    }
+  }
+}

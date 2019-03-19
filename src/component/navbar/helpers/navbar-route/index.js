@@ -12,8 +12,8 @@ class NavbarRoute extends Component {
   }
   render () {
     return (
-      <div className='navbar-route-container'>
-        <Link to={this.state.route}>{this.state.name}</Link>
+      <div className='navbar-route-container nav-item'>
+        <Link className='nav-link' to={this.state.route}>{this.state.name}</Link>
       </div>
     )
   }

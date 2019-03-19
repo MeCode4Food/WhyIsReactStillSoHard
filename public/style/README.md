@@ -1,0 +1,1 @@
+outside src imports not allowed in react scripts. eject required, but not doing it

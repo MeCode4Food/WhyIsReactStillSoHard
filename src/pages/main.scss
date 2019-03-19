@@ -1,0 +1,18 @@
+@import '../static/style/scss/_variables';
+
+$marginPercentage:0.1;
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 10%;
+  }
+}
+
+.app-container{
+
+  .main-container{
+    padding: remVal(40px) 0 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
