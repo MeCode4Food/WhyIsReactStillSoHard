@@ -8,11 +8,13 @@ $marginPercentage:0.1;
   }
 }
 
-.app-container{
+.main-container{
+  min-height: 100%;
+  padding: remVal(40px) 0 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-  .main-container{
-    padding: remVal(40px) 0 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  // footer {
+  //   justify-self: flex-end;
+  // }
 }

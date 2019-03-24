@@ -1,0 +1,29 @@
+<svg id="iconfinder_5303_-_Gmail_1314180" xmlns="http://www.w3.org/2000/svg" width="12.935" height="9" viewBox="0 0 12.935 9">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: silver;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Layer_x0020_1" transform="translate(0.02 0)">
+    <g id="_333160488">
+      <g id="Group_5" data-name="Group 5" transform="translate(0 0)">
+        <path id="_333160872" class="cls-1" d="M1647.03,497.153h.384a.872.872,0,0,0,.888-.85V489a.872.872,0,0,0-.888-.85h-.384Z" transform="translate(-1635.407 -488.153)"/>
+        <path id="_333160368" class="cls-1" d="M262.479,494.1l-.01.007-.026-.019-.026.019-.01-.007c-2.15-1.583-4.259-3.278-6.411-4.934l.574-.94.627-.054.017-.016,5.205,4.063.025-.02.025.02,5.205-4.063.017.016.627.054.574.94C266.738,490.82,264.629,492.514,262.479,494.1Z" transform="translate(-255.995 -488.155)"/>
+        <path id="_333160728" class="cls-1" d="M257.271,497.153h-.384a.872.872,0,0,1-.888-.85V489a.872.872,0,0,1,.888-.85h.384Z" transform="translate(-255.999 -488.153)"/>
+      </g>
+      <path id="_333160440" class="cls-2" d="M366.182,1509.25h10.961v.444H366.182Z" transform="translate(-365.215 -1500.694)"/>
+      <path id="_333160752" class="cls-2" d="M366.182,488.152h10.961v.444H366.182Z" transform="translate(-365.215 -488.152)"/>
+    </g>
+  </g>
+  <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-3" width="12.935" height="8.94" transform="translate(0 0.03)"/>
+</svg>

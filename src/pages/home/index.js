@@ -8,7 +8,7 @@ export class HomeContent extends Component {
         <img className='cat' src={require('../../static/images/cat.jpg')} alt='cat' />
         <div className='d-flex flex-column justify-content-between content-container'>
           <div className='content-main'>
-            <div className='main-text'>Fullstek Dev Cat</div>
+            <div className='main-text'>Fullstek DevOps Cat</div>
             <div className='side-text'>
               <div className='side-text-1'>I be cat all day</div>
               <div className='side-text-2'>I care not what ppl say</div>
