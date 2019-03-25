@@ -1,5 +1,7 @@
+$remValue: 20px;
+
 @function remVal($args) {
-  @return $args / 16px * 1rem;
+  @return $args / $remValue * 1rem;
 }
 
 $font-title: 'Segoe UI', sans-serif;
@@ -11,5 +13,9 @@ $font-bold: 'OpenSans_bold', sans-serif;
 $font-boldItalic: 'OpenSans_boldItalic', sans-serif;
 
 $light-grey: #c0c0c0;
+$semi-black: #212529;
+$black: #000000;
 
-$navbar-line-width: 2px;
+$navbar-line-width: remVal(2.5px);
+
+$main-container-margin: remVal(350px);

@@ -3,7 +3,7 @@ import { Route, Redirect, Switch } from 'react-router-dom'
 import HomeContent from './home'
 import AboutContent from './about'
 import ContactContent from './contact'
-import ProjectHomeContent from './project'
+import ProjectHomeContent from './projecthome'
 
 import Navbar from '../component/navbar'
 import Footer from '../component/footer'

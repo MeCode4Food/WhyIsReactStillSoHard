@@ -1,10 +1,11 @@
-@import '../static/style/scss/_variables';
+@import '../static/style/scss/_variables.scss';
 
-$marginPercentage:0.1;
+$marginPercentage: 75%;
 
 @media (min-width: 1200px) {
   .container {
-    min-width: 10%;
+    // max-width: $marginPercentage;
+    max-width: calc(100% - #{$main-container-margin});
   }
 }
 

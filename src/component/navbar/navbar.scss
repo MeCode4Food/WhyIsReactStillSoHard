@@ -19,7 +19,7 @@ nav {
     padding-bottom: 0;
 
     .nav-link {
-      color: #000000;
+      color: $semi-black;
       padding: 0;
       margin: 0 0 0 remVal(80px);
     }
@@ -28,8 +28,8 @@ nav {
       content: '';
       display: block;
       width: 0;
-      height: 2.5px;
-      background: #000000;
+      height: $navbar-line-width;
+      background: $black;
       transition: width .3s;
     }
 
@@ -37,8 +37,8 @@ nav {
       content: '';
       display: block;
       width: 100%;
-      height: 2.5px;
-      background: #000000;
+      height: $navbar-line-width;
+      background: $black;
     }
   }
 
