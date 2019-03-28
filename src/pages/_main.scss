@@ -1,0 +1,46 @@
+@import '../static/style/scss/_variables.scss';
+
+$marginPercentage: 75%;
+
+@media (min-width: 1200px) {
+  .container {
+    // max-width: $marginPercentage;
+    max-width: calc(100% - #{$main-container-margin});
+  }
+}
+
+.main-container{
+  min-height: 100%;
+  padding: remVal(40px) 0 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .transition-group{
+    width: 100%;
+  }
+  section.switch-wrapper {
+    position: absolute;
+  }
+  
+//   .switch-wrapper > div {
+//     position: absolute;
+//   }
+}
+
+.page-enter{
+  opacity: 0.01;
+}
+
+.page-enter.page-enter-active{
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.page-exit{
+  opacity: 1;
+}
+
+.page-exit.page-exit-active{
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}

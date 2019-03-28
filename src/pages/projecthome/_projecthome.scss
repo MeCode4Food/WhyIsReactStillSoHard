@@ -4,4 +4,8 @@
   >.project-header{
     font-family: $font-lightItalic;
   }
+  >img.nav-project-thumbnail{
+    height: remVal(154px);
+    width: remVal(154px);
+  }
 }

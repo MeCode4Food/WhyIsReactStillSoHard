@@ -1,18 +1,19 @@
 @import '../../static/style/scss/_variables';
 
 nav {
+  flex-direction: row;
   font-family: $font-normal;
 }
 
-
 .navbar-title {
   font-family: $font-title;
-  font-size: remVal(30px);
+  font-size: remVal(40px);
+  flex-direction: row;
 }
 
-
 .navbar-routes {
-  font-size: remVal(20px);
+  font-size: remVal(26px);
+  align-items: flex-end;
 
   .nav-item {
     padding-bottom: 0;
@@ -21,6 +22,10 @@ nav {
       color: $medium-grey;
       padding: 0;
       transition: .3s;
+    }
+
+    :not(:first-child) .nav-link {
+      margin: 0 0 0 remVal(80px);
     }
     
     ::after{
@@ -47,10 +52,6 @@ nav {
     }
   }
 
-  .nav-item:not(:first-child) .nav-link{
-    margin: 0 0 0 remVal(80px);
-  }
-
   .nav-item:hover {
     .nav-link {
       color: $black;
@@ -61,9 +62,4 @@ nav {
       width: 100%;
     }
   }
-}
-
-nav {
-  margin-top: remVal(10px);
-  margin-bottom: remVal(10px);
 }

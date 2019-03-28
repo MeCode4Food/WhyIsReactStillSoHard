@@ -1,24 +1,24 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
 @import '../../static/style/scss/_variables';
 
 .footer-container{
   font-family: $font-light;
-  font-size: remVal(14px);
+  font-size: remVal(9px);
   color: $light-grey;
-  padding: remVal(5px) 0;
 
   .footer-text{
-    padding-right: remVal(30px);
     white-space: pre;
+    margin-bottom: remVal(5px);
   }
   
   .footer-images{
-    .footer-linkedin, .footer-github, .footer-discord{
-      height: remVal(13px);
-      margin: 0 remVal(4px);
-    }
-
-    .footer-gmail{
-      height: remVal(11px);
+    margin-bottom: remVal(5px);
+    margin-left: remVal(15px);
+    .footer-linkedin, .footer-github, .footer-gmail, .footer-discord{
+      height: remVal(9px);
       margin: 0 remVal(4px);
     }
   }

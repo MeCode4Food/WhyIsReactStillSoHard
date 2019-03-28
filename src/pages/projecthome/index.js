@@ -10,9 +10,14 @@ export class ProjectHomeContent extends Component {
       <div className='d-flex flex-column justify-content-center projecthome-container'>
         <div className='project-header'>Projects you say?</div>
         {
-          _.map(projectList, (project) => {
+          _.map(projectList, (project, i) => {
             return (
-              <img className='nav-project-thumbnail' src={require(`../../static/projects/assets/${project.thumbnail}`)} alt={project.title} />
+              <img
+                className='nav-project-thumbnail'
+                src={require(`../../static/projects/assets/${project.thumbnail}`)}
+                alt={project.title}
+                key={i}
+              />
             )
           })
         }

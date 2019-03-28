@@ -1,0 +1,25 @@
+@import '../../static/style/scss/_variables';
+
+.footer-container {
+  font-family: $font-light;
+  font-size: 0.75rem;
+  color: $light-grey;
+  padding: remVal(5px) 0;
+
+  .footer-text {
+    padding-right: remVal(30px);
+    white-space: pre;
+  }
+  
+  .footer-images {
+    .footer-linkedin, .footer-github, .footer-discord {
+      height: remVal(13px);
+      margin: 0 remVal(4px);
+    }
+
+    .footer-gmail {
+      height: remVal(11px);
+      margin: 0 remVal(4px);
+    }
+  }
+}

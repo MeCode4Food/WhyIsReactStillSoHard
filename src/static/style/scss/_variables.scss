@@ -1,4 +1,4 @@
-$remValue: 20px;
+$remValue: 16px;
 
 @function remVal($args) {
   @return $args / $remValue * 1rem;
@@ -13,9 +13,31 @@ $font-bold: 'OpenSans_bold', sans-serif;
 $font-boldItalic: 'OpenSans_boldItalic', sans-serif;
 
 $light-grey: #c0c0c0;
+$medium-grey: #707070;
 $semi-black: #212529;
 $black: #000000;
 
 $navbar-line-width: remVal(2.5px);
 
 $main-container-margin: remVal(350px);
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 320px) { 
+  html { font-size : 16px }
+}
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { 
+//   html { font-size : 16px }  
+// }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  html { font-size : 18px }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  html { font-size : 20px }
+}

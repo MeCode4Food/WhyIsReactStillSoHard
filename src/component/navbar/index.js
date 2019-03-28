@@ -35,12 +35,13 @@ class Navbar extends Component {
   render () {
     const { location } = this.props
     return (
-      <nav className='d-flex justify-content-between'>
+      <nav className='d-flex row align-items-end justify-content-between navbar-container'>
         <div className='navbar-title'>{this.state.title}</div>
         <div className='d-flex navbar-routes'>
           {
-            _.map(this.state.routes, (route) => {
+            _.map(this.state.routes, (route, i) => {
               return <NavbarRoute
+                key={i}
                 name={_.get(route, 'name')}
                 route={_.get(route, 'path')}
                 active={isActiveRoute(location, route)}

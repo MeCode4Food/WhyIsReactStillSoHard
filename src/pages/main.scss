@@ -1,21 +1,24 @@
 @import '../static/style/scss/_variables.scss';
 
-$marginPercentage: 75%;
 
-@media (min-width: 1200px) {
-  .container {
-    // max-width: $marginPercentage;
-    max-width: calc(100% - #{$main-container-margin});
+.main-container{
+  height: 100%;
+
+  .transition-group{
+    width: 100%;
+  }
+  section.switch-wrapper {
+    position: absolute;
+  }
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .main-container{
+    padding:0 remVal(70px);
   }
 }
 
-.main-container{
-  min-height: 100%;
-  padding: remVal(40px) 0 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  // footer {
-  //   justify-self: flex-end;
-  // }
-}
+// @media (min-width: 1400px) {
+//   padding: 0 remVal(60px);
+// }
