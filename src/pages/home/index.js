@@ -4,9 +4,9 @@ import './home.scss'
 export class HomeContent extends Component {
   render () {
     return (
-      <div className='d-flex row justify-content-center home-container'>
+      <div className='d-flex row home-container'>
         <img className='cat' src={require('../../static/images/cat.jpg')} alt='cat' />
-        <div className='d-flex flex-column align-content-left justify-content-between content-container col-sm-4'>
+        <div className='d-flex flex-column align-text-left justify-content-between content-container'>
           <div className='content-main'>
             <div className='main-text'>Fullstek DevOps Cat</div>
             <div className='side-text'>

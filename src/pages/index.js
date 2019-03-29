@@ -28,14 +28,14 @@ export class Main extends Component {
         <header>
           <Navbar />
         </header>
-        <main>
-          <TransitionGroup className='transition-group'>
+        <main className='container-fluid'>
+          <TransitionGroup className='row transition-group'>
             <CSSTransition
               key={location.key}
               timeout={{ enter: 1000, exit: 1000 }}
               classNames={'page'}
             >
-              <section className='switch-wrapper'>
+              <section className='switch-wrapper container'>
                 <Switch location={location}>
                   <Route exact path='/' render={() => <Redirect to='/home' />} />
                   <Route exact path='/home' component={HomeContent} />

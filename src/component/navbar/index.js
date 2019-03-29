@@ -35,7 +35,7 @@ class Navbar extends Component {
   render () {
     const { location } = this.props
     return (
-      <nav className='d-flex row align-items-end justify-content-between navbar-container'>
+      <nav className='d-flex align-items-end justify-content-between navbar-container'>
         <div className='navbar-title'>{this.state.title}</div>
         <div className='d-flex navbar-routes'>
           {

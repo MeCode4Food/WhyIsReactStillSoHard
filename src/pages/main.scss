@@ -5,12 +5,17 @@
   height: 100%;
 
   .transition-group{
-    width: 100%;
+    // width: inherit;
+    position: relative;
+
+    section.switch-wrapper {
+      // width: inherit;
+      position: absolute;
+    }
   }
-  section.switch-wrapper {
-    position: absolute;
+  .page{
+    position: relative;
   }
-  
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -22,3 +27,21 @@
 // @media (min-width: 1400px) {
 //   padding: 0 remVal(60px);
 // }
+
+.page-enter{
+  opacity: 0.01;
+}
+
+.page-enter.page-enter-active{
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.page-exit{
+  opacity: 1;
+}
+
+.page-exit.page-exit-active{
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
