@@ -6,6 +6,7 @@ module.exports = [
     thumbnail: 'project_1_thumbnail.jpg',
     pictures: [
       'project_1_1.jpg'
-    ]
+    ],
+    show: true
   }
 ]

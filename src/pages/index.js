@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import HomeContent from './home'
 import AboutContent from './about'
 import ContactContent from './contact'
-import ProjectHomeContent from './projecthome'
+import ProjectHomeContent from './projects'
 
 import Navbar from '../component/navbar'
 import Footer from '../component/footer'
@@ -41,7 +41,7 @@ export class Main extends Component {
                   <Route exact path='/home' component={HomeContent} />
                   <Route exact path='/about' component={AboutContent} />
                   <Route exact path='/contact' component={ContactContent} />
-                  <Route exact path='/projects' component={ProjectHomeContent} />
+                  <Route path='/projects' component={ProjectHomeContent} />
                   <Route exact path='/styleguide' component={ProjectHomeContent} />
                 </Switch>
               </section>
