@@ -32,7 +32,7 @@ export class Main extends Component {
           <TransitionGroup className='row transition-group'>
             <CSSTransition
               key={location.key}
-              timeout={{ enter: 1000, exit: 1000 }}
+              timeout={{ enter: 2000, exit: 1000 }}
               classNames={'page'}
             >
               <section className='switch-wrapper container'>

@@ -24,17 +24,13 @@
   }
 }
 
-// @media (min-width: 1400px) {
-//   padding: 0 remVal(60px);
-// }
-
 .page-enter{
   opacity: 0.01;
 }
 
 .page-enter.page-enter-active{
   opacity: 1;
-  transition: opacity 1000ms ease-in;
+  transition: opacity 750ms ease 600ms;
 }
 
 .page-exit{
@@ -43,5 +39,5 @@
 
 .page-exit.page-exit-active{
   opacity: 0.01;
-  transition: opacity 1000ms ease-in;
+  transition: opacity 300ms ease-in;
 }

@@ -5,7 +5,7 @@ export class HomeContent extends Component {
   render () {
     return (
       <div className='d-flex row home-container'>
-        <img className='cat' src={require('../../static/images/cat.jpg')} alt='cat' />
+        <img className='cat' src={require('../../static/images/bongo-cat.gif')} alt='cat' />
         <div className='d-flex flex-column align-text-left justify-content-between content-container'>
           <div className='content-main'>
             <div className='main-text'>Fullstek DevOps Cat</div>
