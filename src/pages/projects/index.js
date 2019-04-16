@@ -17,17 +17,15 @@ export class ProjectMainContent extends Component {
     this.fillUpProjectList(projectList)
 
     return (
-      <div className='project-container'>
-        <Switch>
-          <Route exact path='/projects/' render={() => (
-            <ProjectHomeContent projectList={projectList} />
-          )} />
-          <Route path='/projects/p/:id' render={() => (
-            <ProjectContent projectList={projectList} />
-          )}
-          />
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path='/projects/' render={() => (
+          <ProjectHomeContent projectList={projectList} />
+        )} />
+        <Route path='/projects/p/:id' render={() => (
+          <ProjectContent projectList={projectList} />
+        )}
+        />
+      </Switch>
     )
   }
 

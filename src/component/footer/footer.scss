@@ -5,6 +5,8 @@
 @import '../../static/style/scss/_variables';
 
 .footer-container{
+  position: absolute;
+  bottom: 0;
   font-family: $font-light;
   font-size: remVal(9px);
   color: $light-grey;

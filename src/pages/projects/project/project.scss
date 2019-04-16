@@ -1,21 +1,5 @@
 @import '../../../static/style/scss/_variables.scss';
 
-.projecthome-container{
-  margin-top: remVal(40px);
-
-  >.project-header{
-    font-family: $font-lightItalic;
-    font-size: remVal(20px);
-    margin-bottom: remVal(22px);
-  }
-
-  img{
-    width:remVal(152px);
-    height:remVal(152px);
-    margin: remVal(10px);
-
-    .placeholder{
-      background: #707070;
-    }
-  }
+.project-content-container{
+  font-family: $font-normal;
 }

@@ -2,18 +2,11 @@ import React, { Component } from 'react'
 import _ from 'lodash'
 import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import Markdown from 'react-markdown'
 
-const ProjectPage = ({ project }) => {
-  return (
-    <div className='project-container'>
-      <div className='project-name'>{project.title}</div>
-      <div className='project-description'>{project.description}</div>
-      <div className='project-pictures'>{project.pictures}</div>
-    </div>
-  )
-}
+// import './project.scss'
 
-const ProjectNotFoundPage = () => {
+const ProjectNotFoundComponent = () => {
   return (
     <div className='project-not-found-container'>
       Project not found in projects list. Please check the projects list and try again.
@@ -22,12 +15,34 @@ const ProjectNotFoundPage = () => {
 }
 
 export class ProjectContent extends Component {
-  render () {
+  constructor(props){
+    super(props)
+    // get list from props
     const { match, projectList } = this.props
+
+    // get project from list
     const project = _.find(projectList, { id: match.params.id })
+
+    // put project in state
+    this.state = { project, markdown : ''}
+  }
+
+  async componentWillMount() {
+    try {
+      const docPath = require(`../../../static/projects/markdown/${this.state.project.id + '.md'}`)
+      const mdDoc = await fetch(docPath)
+      const markdown = await mdDoc.text()
+
+      this.setState({ markdown })
+    } catch (error) {
+      this.state.project = null
+    }
+  }
+
+  render () {
     return (
       <div className='project-content-container'>
-        {project ? <ProjectPage project={project} /> : <ProjectNotFoundPage />}
+        {this.state.project ? <Markdown source={this.state.markdown} /> : <ProjectNotFoundComponent />}
       </div>
     )
   }
